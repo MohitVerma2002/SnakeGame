@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Rock+Salt&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background: url("background.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    background:linear-gradient(transparent,rgb(125, 197, 125),green);
+    width: 90vmin;
+    height: 92vmin;
+    border: 3px solid black;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+.head{
+    background: linear-gradient(red,orange);
+    border-radius: 5px;
+    border: 0.80px solid white;
+}
+.snake{
+    background:linear-gradient(blue,violet);
+    border-radius: 8px;
+    border: 0.25px solid white;
+}
+.food{
+    background: linear-gradient(yellow,orange);
+    border-radius: 5px;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 75px;
+    font-size: 34px;
+    font-weight: bold;
+    font-family: 'Rock Salt', cursive;
+}
+#hiscoreBox{
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Rock Salt', cursive;
+}
