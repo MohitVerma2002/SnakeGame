@@ -54,3 +54,17 @@
     font-weight: bold;
     font-family: 'Rock Salt', cursive;
 }
+@media (max-width: 1440px) {
+    #smallScreen {
+      display: none;
+    }
+  }
+  @media (max-width: 910px) {
+
+    #smallScreen {
+      display: block;
+    }
+.body{
+    display: none;
+}
+  }
